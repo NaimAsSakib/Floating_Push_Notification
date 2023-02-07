@@ -26,12 +26,23 @@
 
 
         <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/cardImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/cardImage"
-            android:layout_marginLeft="6dp"
-            android:layout_marginTop="-53dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-29dp"
             android:layout_toRightOf="@+id/cardImage"
             android:text="This is description"
             android:textSize="20sp"

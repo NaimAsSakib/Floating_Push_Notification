@@ -27,7 +27,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         val remoteView = RemoteViews("com.example.pushnotification",R.layout.notification)
 
-        //remoteView.setTextViewText(R.id.title,title)
+        remoteView.setTextViewText(R.id.title,title)
         remoteView.setTextViewText(R.id.description,message)
         remoteView.setImageViewResource(R.id.app_logo,R.drawable.ic_tiger)
 
