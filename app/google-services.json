@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "579890043711",
+    "project_id": "floating-push-notification",
+    "storage_bucket": "floating-push-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579890043711:android:14894b3065ab52fb15918a",
+        "android_client_info": {
+          "package_name": "com.example.floatingpushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579890043711-pp63utgguu6s1uralljj1suqn3o2qigi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZF_kyJLQn-m70OMCBQEXFTA_VI6QGlFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579890043711-pp63utgguu6s1uralljj1suqn3o2qigi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
