@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
         val notificationManager = NotificationManagerCompat.from(this)
-        // notificationManager.notify(1, builder.build())
         notificationManager.notify(1,builder.build())
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
