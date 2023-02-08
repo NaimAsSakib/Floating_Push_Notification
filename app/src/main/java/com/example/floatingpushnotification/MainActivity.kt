@@ -17,7 +17,6 @@ import androidx.core.app.NotificationManagerCompat
 class MainActivity : AppCompatActivity() {
     private lateinit var tvPlay:TextView
 
-    private val NOTIFICATION_ID = 1
     @SuppressLint("MissingInflatedId", "MissingPermission")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
