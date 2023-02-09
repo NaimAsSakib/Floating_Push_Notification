@@ -145,7 +145,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     }
 
     private fun initNotificationChannel() {
-        val value = "/raw/cutom_rington_1"
+        val value = "/raw/short_sms_tone"
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) return
         val channelName = getString(R.string.general_channel_title)
         val channelDescription = getString(R.string.general_channel_description)
