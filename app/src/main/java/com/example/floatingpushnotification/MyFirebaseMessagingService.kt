@@ -86,6 +86,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         generateNotification(remoteMessage.data["title"] ?: "title")
         //showNotification(remoteMessage)
 
+
     }
 
 

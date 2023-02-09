@@ -12,6 +12,7 @@ import android.media.MediaPlayer
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.NotificationCompat
@@ -47,11 +48,12 @@ class MainActivity : AppCompatActivity() {
 
             // Log and toast
             txt.text= token
-            //Log.d("nsbcmbsmcnxmcb", token)
+            Log.e("nsbcmbsmcnxmcb", token)
         }
         txt.setOnClickListener {
             copyToClipboard(txt.text.toString())
             Toast.makeText(this,"Copied", Toast.LENGTH_LONG).show()
+            Log.e("listen", "listener clicked")
         }
     }
 
