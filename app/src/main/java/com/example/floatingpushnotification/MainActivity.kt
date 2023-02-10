@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
             // Log and toast
             txt.text= token
-            Log.e("nsbcmbsmcnxmcb", token)
+            Log.e("pial", token)
         }
         txt.setOnClickListener {
             copyToClipboard(txt.text.toString())
