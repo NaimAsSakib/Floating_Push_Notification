@@ -20,9 +20,8 @@ import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import kotlin.random.Random
 
-//const val channelId = "notification_channel"
-//const val channelName = "com.example.floatingpushnotification"
-@SuppressLint("MissingFirebaseInstanceTokenRefresh")
+
+
 class MyFirebaseMessagingService : FirebaseMessagingService() {
 
    /* override fun onMessageReceived(remoteMessage: RemoteMessage) {
@@ -75,9 +74,10 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         MediaPlayer.create(applicationContext, R.raw.short_sms_tone).start()
     }*/
 
-   override fun onNewToken(token: String) {
+    override fun onNewToken(token: String) {
 
-   }
+    }
+
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
         super.onMessageReceived(remoteMessage)
         Log.e("fdgfd", "" + remoteMessage.data.toString())
@@ -86,9 +86,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         generateNotification(remoteMessage.data["title"] ?: "title")
         //showNotification(remoteMessage)
 
-
     }
-
 
     fun generateNotification(message: String) {
         val intent = Intent(this, MainActivity::class.java)
@@ -102,7 +100,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             NotificationCompat.Builder(applicationContext, CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_tiger)
                 .setSound(
-                    Uri.parse("${ContentResolver.SCHEME_ANDROID_RESOURCE}://${this@MyFirebaseMessagingService.packageName}/${R.raw.short_sms_tone}")
+                    Uri.parse("${ContentResolver.SCHEME_ANDROID_RESOURCE}://${this.packageName}/${R.raw.cutom_rington_1}")
                 )
                 .setAutoCancel(true)
                 .setVibrate(longArrayOf(1000, 1000, 1000, 1000, 1000))
@@ -146,7 +144,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     }
 
     private fun initNotificationChannel() {
-        val value = "/raw/short_sms_tone"
+        val value = "/raw/cutom_rington_1"
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) return
         val channelName = getString(R.string.general_channel_title)
         val channelDescription = getString(R.string.general_channel_description)
