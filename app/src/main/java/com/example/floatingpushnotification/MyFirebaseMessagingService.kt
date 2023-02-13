@@ -48,7 +48,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         var builder: NotificationCompat.Builder =
             NotificationCompat.Builder(applicationContext, CHANNEL_ID)
-                .setSmallIcon(R.drawable.ic_tiger)
+                .setSmallIcon(R.drawable.ic_stat_name)
                 .setSound(
                     Uri.parse("${ContentResolver.SCHEME_ANDROID_RESOURCE}://${this.packageName}/${R.raw.cutom_rington_1}")
                 )
@@ -88,7 +88,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         //remoteView.setTextViewText(R.id.title,title)
         remoteView.setTextViewText(R.id.description, message)
-        remoteView.setImageViewResource(R.id.app_logo, R.drawable.ic_tiger)
+        remoteView.setImageViewResource(R.id.app_logo, R.drawable.ic_tiger)  //R.drawable.ic_stat_name
 
         return remoteView
     }
